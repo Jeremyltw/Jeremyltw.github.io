@@ -1,5 +1,7 @@
 :root{
   --highlight:#11346b;
+  --hover:#2673ed;
+  --special-hover:#e5fc60;
 }
 
 .bg-image {
@@ -99,6 +101,26 @@ right: 0px;
   background-color:white;
   color: var(--highlight);
 }
+
+.hover-normal:hover{
+  color:var(--hover);
+}
+
+.hover-special:hover{
+  color:var(--special-hover);
+}
+
+.block{
+  display: block;
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.connect{
+  background-color: var(--highlight);
+  color:white;
+  border-radius: 10px;
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 200px) {
   .person h1 {
@@ -137,7 +159,7 @@ right: 0px;
   .center{
     align-items: center;
     justify-content: center;
-    margin-left: 20%;
+    margin-left: 10%;
   }
   .center-top{
     display: flex;
